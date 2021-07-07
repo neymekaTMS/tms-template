@@ -1,0 +1,24 @@
+{
+  "name": "tms_structure",
+  "version": "1.0.0",
+  "description": "Structure for TMS mockups",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp start",
+    "build": "gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.1"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-shorthand": "^1.1.0"
+  }
+}
