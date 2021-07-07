@@ -1,13 +1,13 @@
 const gulp = require('gulp');
-const styles = require('../gulp/styles');
-const image = require('../gulp/image');
-const html = require('../gulp/html');
+const styles = require('./styles');
+const image = require('./image');
+const html = require('./html');
 
 const server = require('browser-sync').create();
 
 function readyReload(cb) {
-  server.reload()
-  cb()
+  server.reload();
+  cb();
 }
 
 module.exports = function watchDev(cb) {
@@ -16,11 +16,11 @@ module.exports = function watchDev(cb) {
       notify: false,
       open: true,
       cors: true
-  })
+  });
 
-  gulp.watch('src/img/*.{png, jpg, jpeg, svg, webp}', gulp.series(image, readyReload))
-  gulp.watch('src/styles/**/*.scss', gulp.series(styles, cb => gulp.src('build/styles').pipe(server.stream()).on('end', cb)))
-  gulp.watch('src/*.html', gulp.series(html, readyReload))
+  gulp.watch('src/img/*.*', gulp.series(image));
+  gulp.watch('src/styles/**/*.scss', gulp.series(styles, cb => gulp.src('build/styles').pipe(server.stream()).on('end', cb)));
+  gulp.watch('src/*.html', gulp.series(html, readyReload));
 
-  return cb()
+  return cb();
 }
