@@ -19,8 +19,8 @@ module.exports = function watchDev(cb) {
   })
 
   gulp.watch('src/img/*.{png, jpg, jpeg, svg, webp}', gulp.series(image, readyReload))
-  gulp.watch('src/styles/**/*.scss', gulp.series(styles, cb => gulp.src('build/css').pipe(server.stream()).on('end', cb)))
-  gulp.watch('*.html', gulp.series(html, readyReload))
+  gulp.watch('src/styles/**/*.scss', gulp.series(styles, cb => gulp.src('build/styles').pipe(server.stream()).on('end', cb)))
+  gulp.watch('src/*.html', gulp.series(html, readyReload))
 
   return cb()
 }

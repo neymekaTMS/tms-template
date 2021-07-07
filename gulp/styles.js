@@ -13,5 +13,5 @@ module.exports = function styles() {
       cascade: false
     }))
     .pipe(cleanCSS())
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest('build/styles'))
 };
