@@ -1,8 +1,7 @@
 // Utils
-
 @import './utils/variables.scss';
 @import './utils/mixins.scss';
-
 // Components
-
+@import './components/fonts.scss';
 @import './components/global.scss';
+@import './components/main.scss'
