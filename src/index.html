@@ -10,56 +10,85 @@
 </head>
 
 <body>
-    <div class="container">
-        <aside class='sidebar'>
-            <a href="#" class='sidebar__logo'>VK</a>
-            <nav class='sidebar__nav'>
-                <a href="#"><img src="./img/home.svg" alt=""></a>
-                <a href="#"><img src="./img/calendar.svg" alt=""></a>
-                <a href="#"><img src="./img/friends.svg" alt=""></a>
-                <a href="#"><img src="./img/msg.svg" alt=""></a>
-                <a href="#"><img src="./img/music.svg" alt=""></a>
-                <a href="#"><img src="./img/statistics.svg" alt=""></a>
-                <a href="#"><img src="./img/settings.svg" alt=""></a>
+    <div class="page">
+        <aside class='page__aside'>
+            <a href="#" class='page__logo'><img src="./img/logo.png" alt="" height="24px" width="42px"></a>
+            <nav class='page__nav main-nav'>
+                <a href="#" class="main-nav__link"><img src="./img/home.svg" alt=""></a>
+                <a href="#" class="main-nav__link"><img src="./img/calendar.svg" alt=""></a>
+                <a href="#" class="main-nav__link"><img src="./img/friends.svg" alt=""></a>
+                <a href="#" class="main-nav__link"><img src="./img/msg.svg" alt=""></a>
+                <a href="#" class="main-nav__link"><img src="./img/music.svg" alt=""></a>
+                <a href="#" class="main-nav__link"><img src="./img/statistics.svg" alt=""></a>
+                <a href="#" class="main-nav__link"><img src="./img/settings.svg" alt=""></a>
             </nav>
-            <button class="sidebar__button">Click Me!</button>
-
+            <button class="page__switch">Click Me!</button>
         </aside>
-        <div class="main-content">
-            <header>
-                <h1 class="header__title">Statistics</h1>
-                <form action="" class="header__searchfield">
-                    <label>
-                        <input type="search" name="" id="" placeholder="Search">
-                    </label>
-                </form>
-                <p class="header__username">Anya</p>
-                <img class="header__userphoto" src="./img/user-photo.png" alt="User Photo">
+        <main class="page__content">
+            <header class="page__header main-header">
+                <h1 class="main-header__title">Statistics</h1>
+                <label>
+                    <button type="submit"><img src="./img/search_loop.svg" alt=""></button> <!--Абсолютно спозиционировать-->
+                    <input type="search" placeholder="Search" class="main-header__search">
+                    
+                </label>
+
+                <button class="main-header__notification">
+                    <img src="./img/notification.svg" alt="">
+                </button>
+                <div class="main-header__user user-info">
+                    <span class="user-info__name"></span>
+                    <button class="user-info__data">
+                    <img src="./img/user-photo.png" alt="" class="user-info__img">
+                    </button>
+                </div>
             </header>
-            <div class="content-blocks">
-                <article class="content-blocks__friends">
-                    <p>Content</p>
+            <div class="main-content content-blocks">
+                <article class="content-blocks friends">
+                    <h3 class="content-blocks friends__title">
+
+                    </h3>
+                    <button class="content-blocks button">
+
+                    </button>
+                    <span class="content-blocks friends__info">
+
+                    </span>
+                    <div class="content-blocks friends__stats">
+
+                    </div>
                 </article>
-                <article class="content-blocks__visitors">
-                    <p>Content</p>
+                <article class="content-blocks visitors">
+                    <h3 class="content-blocks visitors__title"></h3>
                 </article>
-                <article class="content-blocks__followers">
-                    <p>Content</p>
+                <article class="content-blocks followers">
+
                 </article>
-                <article class="content-blocks__audience">
-                    <p>Content</p>
+                <article class="content-blocks audience">
+
                 </article>
-                <article class="content-blocks__device">
-                    <p>Content</p>
+                <article class="content-blocks device">
+
                 </article>
-                <article class="content-blocks__gender">
-                    <p>Content</p>
+                <article class="content-blocks gender/age">
+
                 </article>
-                <article class="content-blocks__geo">
-                    <p>Content</p>
+                <article class="content-blocks geo">
+
+
                 </article>
+
             </div>
-        </div>
+        </main>
+
+
+
+
+
+
+
+
+
 
     </div>
 
