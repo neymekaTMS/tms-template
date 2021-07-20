@@ -27,11 +27,10 @@
         <main class="page__content">
             <header class="page__header main-header">
                 <h1 class="main-header__title">Statistics</h1>
-                <label>
-                    <button type="submit"><img src="./img/search_loop.svg" alt=""></button> <!--Абсолютно спозиционировать-->
+                <form class="main-header__search-form">
+                    <button type="submit"><img src="./img/search_loop.svg" alt=""></button>
                     <input type="search" placeholder="Search" class="main-header__search">
-                    
-                </label>
+                </form>
 
                 <button class="main-header__notification">
                     <img src="./img/notification.svg" alt="">
@@ -43,39 +42,87 @@
                     </button>
                 </div>
             </header>
-            <div class="main-content content-blocks">
-                <article class="content-blocks friends">
-                    <h3 class="content-blocks friends__title">
-
+            <div class="page__articles">
+                <article class="content-block">
+                    <h3 class="content-block__title">
+                        Friends
                     </h3>
-                    <button class="content-blocks button">
-
+                    <button class="content-block__button">
+                        ...
                     </button>
-                    <span class="content-blocks friends__info">
-
+                    <span class="content-block__info">
+                        271 people
                     </span>
-                    <div class="content-blocks friends__stats">
-
+                    <div class="content-block__stats">
+                        + 0,7%
                     </div>
                 </article>
-                <article class="content-blocks visitors">
-                    <h3 class="content-blocks visitors__title"></h3>
+                <article class="content-block">
+                    <h3 class="content-block__title">
+                        Unique visitors
+                    </h3>
+                    <button class="content-block__button">
+                        ...
+                    </button>
+                    <span class="content-block__info">
+                        69 people
+                    </span>
+                    <div class="content-block__stats">
+                        - 1,7%
+                    </div>
                 </article>
-                <article class="content-blocks followers">
-
+                <article class="content-block">
+                    <h3 class="content-block__title">
+                        Followers
+                    </h3>
+                    <button class="content-block__button">
+                        ...
+                    </button>
+                    <span class="content-block__info">
+                        288 people
+                    </span>
+                    <div class="content-block__stats">
+                        + 1%
+                    </div>
                 </article>
-                <article class="content-blocks audience">
-
+                <article class="content-block">
+                    <h3 class="content-block__title">
+                        Audience reach
+                    </h3>
+                    <span class="content-block__date">
+                        31/01/2020 - 06/02/2020
+                    </span>
+                    <label><input type="checkbox" class="contennt-block__checkbox">Total</label>
+                    <label><input type="checkbox" class="content-block__checkbox--purple">Follower</label>
+                    <img src="./img/schedule.png" class="content-block__image">
                 </article>
-                <article class="content-blocks device">
-
+                <article class="content-block">
+                    <h3 class="content-block__title">
+                        Reach by device
+                    </h3>
+                    <img src="./img/schedule_device.png">
+                    <div class="content-block__square--purple"></div>
+                    <span class="content-block__legend">Desktop</span>
+                    <div class="content-block__square"></div>
+                    <span class="content-block__legend">Mobile views</span>
                 </article>
-                <article class="content-blocks gender/age">
-
+                <article class="content-block">
+                    <h3 class="content-block__title">
+                        Gender / Age
+                    </h3>
+                    <div class="content-block__square--purple"></div>
+                    <span class="content-block__legend">women</span>
+                    <div class="content-block__square"></div>
+                    <span class="content-block__legend">man</span>
+                    <img src="./img/schedule_gender.png" class="content-block__image">
                 </article>
-                <article class="content-blocks geo">
-
-
+                <article class="content-block">
+                    <h3 class="content-block__title">
+                        Geo
+                    </h3>
+                    <button class="content-block__switcher--active">Country</button>
+                    <button class="content-block__switcher">City</button>
+                    <img src="./img/schedule_geo.png" alt="">
                 </article>
 
             </div>
