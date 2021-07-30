@@ -86,10 +86,11 @@
 .content-block__date {
     border: none;
     appearance: none;
-    background-image: url(/build/img/shevron_down.svg);
+    background-image: url(../img/shevron_down.svg);
     background-size: 7px;
     background-repeat: no-repeat;
-    background-position: 94% 50%;
+    padding-right: 30px;
+    background-position: 90% 50%;
   }
   
   .content-block__date:focus {

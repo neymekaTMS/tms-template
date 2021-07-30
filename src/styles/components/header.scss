@@ -49,4 +49,10 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    position: relative;
+}
+
+.user-info__shevron {
+    position: absolute;
+    top: 50%;
 }

@@ -9,8 +9,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: $gilroy;
-    background: url(/build/img/ellipses.png);
+    background: url(../img/ellipses.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
 }
 
