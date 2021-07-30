@@ -1,4 +1,98 @@
+.content-block--friends, 
+.content-block--visitors, 
+.content-block--followers {
+    width: 31%;
+}
+
+.content-block--audience {
+    width: 71%;
+}
+
+.content-block--device {
+    width: 26%;
+}
+
+.content-block--gender {
+    width: 60%
+}
+
+.content-block--geo {
+    width: 37%;
+}
+
+.page__articles {
+    padding-top: 45px;
+}
+
 .content-block {
     background-color: #FFF;
     border-radius: 13px;
+    padding: 24px;
 }
+
+.content-block__top-parts {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.content-block__title {
+    margin: 0;
+    font-family: $gilroy;
+}
+
+.content-block__button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px; 
+    letter-spacing: 2px;
+}
+
+.content-block__bottom-parts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-block__audience-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    width: 50%;
+}
+
+.content-block__gender-legend {
+    display: flex;
+
+}
+
+.content-block__geo-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.content-block__switcher {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.content-block__switcher--active {
+    font-weight: $semibold;
+}
+
+.content-block__date {
+    border: none;
+    appearance: none;
+    background-image: url(/build/img/shevron_down.svg);
+    background-size: 7px;
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+  }
+  
+  .content-block__date:focus {
+    outline: none;
+  }
+  

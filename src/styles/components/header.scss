@@ -1,10 +1,52 @@
 .page__header {
     display: flex;
     align-items: center;
-    width: 100%;
-    margin-top: 20px;
+    
+    padding-top: 20px;
+}
+
+.main-header__left-part {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-header__user {
-    padding-left: auto;
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-header__notification {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.main-header__search-form {
+    position: relative;
+}
+
+.main-header__button-loop {
+    position: absolute;
+    background: transparent;
+    border: none;
+    left: 3%;
+    top: 20%;
+}
+
+.main-header__search {
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid $semiwhite-color;
+    padding-left: 30px;
+}
+
+.user-info__data {
+    margin-left: 11px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }

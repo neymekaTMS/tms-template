@@ -14,117 +14,151 @@
         <aside class='page__aside'>
             <a href="#" class='page__logo'><img src="./img/logo.png" alt="" height="24px" width="42px"></a>
             <nav class='page__nav main-nav'>
-                <a href="#" class="main-nav__link"><img src="./img/home.svg" alt=""></a>
-                <a href="#" class="main-nav__link"><img src="./img/calendar.svg" alt=""></a>
-                <a href="#" class="main-nav__link"><img src="./img/friends.svg" alt=""></a>
-                <a href="#" class="main-nav__link"><img src="./img/msg.svg" alt=""></a>
-                <a href="#" class="main-nav__link"><img src="./img/music.svg" alt=""></a>
-                <a href="#" class="main-nav__link"><img src="./img/statistics.svg" alt=""></a>
-                <a href="#" class="main-nav__link"><img src="./img/settings.svg" alt=""></a>
+                <a href="#" class="main-nav__link"><img src="./img/home.svg" alt="home_svg"></a>
+                <a href="#" class="main-nav__link"><img src="./img/calendar.svg" alt="calendar_svg"></a>
+                <a href="#" class="main-nav__link"><img src="./img/friends.svg" alt="friends_svg"></a>
+                <a href="#" class="main-nav__link"><img src="./img/msg.svg" alt="msg_svg"></a>
+                <a href="#" class="main-nav__link"><img src="./img/music.svg" alt="music_svg"></a>
+                <a href="#" class="main-nav__link"><img src="./img/statistics.svg" alt="statistics_svg"></a>
+                <a href="#" class="main-nav__link"><img src="./img/settings.svg" alt="settings_svg"></a>
             </nav>
             <button class="page__switch">Click Me!</button>
         </aside>
         <main class="page__content">
             <header class="page__header main-header">
+                <div class="main-header__left-part">
                 <h1 class="main-header__title">Statistics</h1>
                 <form class="main-header__search-form">
-                    <button type="submit"><img src="./img/search_loop.svg" alt=""></button>
-                    <input type="search" placeholder="Search" class="main-header__search">
+                    <button class="main-header__button-loop"type="submit"><img src="./img/search_loop.svg" alt=""></button>
+                    <label><input type="search" placeholder="Search" class="main-header__search"></label>
                 </form>
-
                 <button class="main-header__notification">
-                    <img src="./img/notification.svg" alt="">
+                    <img src="./img/notification.svg" alt="notification_svg">
                 </button>
+                </div>
                 <div class="main-header__user user-info">
                     <span class="user-info__name">Anya</span>
                     <button class="user-info__data">
-                    <img src="./img/user-photo.png" alt="" class="user-info__img">
+                    <img src="./img/user-photo.png" alt="user-photo_png" class="user-info__img">
                     </button>
                 </div>
             </header>
             <div class="page__articles">
-                <article class="content-block">
-                    <h3 class="content-block__title">
-                        Friends
-                    </h3>
-                    <button class="content-block__button">
-                        ...
-                    </button>
-                    <span class="content-block__info">
-                        271 people
-                    </span>
-                    <div class="content-block__stats">
-                        + 0,7%
+                <div class="page__articles-rows">
+                <article class="content-block content-block--friends">
+                    <div class="content-block__top-parts">
+                        <h2 class="content-block__title">
+                            Friends
+                        </h2>
+                        <button class="content-block__button">
+                            ...
+                        </button>
+                    </div>
+                    <div class="content-block__bottom-parts">
+                        <span class="content-block__info">
+                            271 people
+                        </span>
+                        <span class="content-block__stats">
+                            + 0,7%
+                        </span>
+                     </div>
+                </article>
+                <article class="content-block content-block--visitors">
+                    <div class="content-block__top-parts">
+                        <h2 class="content-block__title">
+                            Unique visitors
+                        </h2>
+                        <button class="content-block__button">
+                            ...
+                        </button>
+                    </div>
+                    <div class="content-block__bottom-parts">
+                        <span class="content-block__info">
+                            69 people
+                        </span>
+                        <span class="content-block__stats">
+                            - 1,7%
+                        </span>
                     </div>
                 </article>
-                <article class="content-block">
-                    <h3 class="content-block__title">
-                        Unique visitors
-                    </h3>
-                    <button class="content-block__button">
-                        ...
-                    </button>
-                    <span class="content-block__info">
-                        69 people
-                    </span>
-                    <div class="content-block__stats">
-                        - 1,7%
+                <article class="content-block content-block--followers">
+                    <div class="content-block__top-parts">
+                        <h2 class="content-block__title">
+                            Followers
+                        </h2>
+                        <button class="content-block__button">
+                            ...
+                        </button>
+                    </div>
+                    <div class="content-block__bottom-parts">
+                        <span class="content-block__info">
+                            288 people
+                        </span>
+                        <span class="content-block__stats">
+                            + 1%
+                        </span>
                     </div>
                 </article>
-                <article class="content-block">
-                    <h3 class="content-block__title">
-                        Followers
-                    </h3>
-                    <button class="content-block__button">
-                        ...
-                    </button>
-                    <span class="content-block__info">
-                        288 people
-                    </span>
-                    <div class="content-block__stats">
-                        + 1%
+            </div>
+            <div class="page__articles-rows">
+                <article class="content-block content-block--audience">
+                   
+                    <div class="content-block__top-parts">
+                        <h2 class="content-block__title">
+                            Audience reach
+                        </h2>
+                        <div class="content-block__audience-filters">
+                            <select class="content-block__date">
+                                <option value="1" selected>31/01/2020 - 06/02/2020</option>
+                                <option value="1">31/01/2020 - 06/02/2020</option>
+                            </select>
+                            <label><input type="checkbox" class="content-block__checkbox ">Total</label>
+                            <label><input type="checkbox" class="content-block__checkbox content-block__checkbox--purple ">Follower</label>
+                        </div>
                     </div>
+                    <img src="./img/schedule.png " class="content-block__image" alt="schedule_png">
                 </article>
-                <article class="content-block">
-                    <h3 class="content-block__title">
-                        Audience reach
-                    </h3>
-                    <span class="content-block__date">
-                        31/01/2020 - 06/02/2020
-                    </span>
-                    <label><input type="checkbox" class="contennt-block__checkbox">Total</label>
-                    <label><input type="checkbox" class="content-block__checkbox--purple">Follower</label>
-                    <img src="./img/schedule.png" class="content-block__image">
+                <article class="content-block content-block--device">
+                    <div class="content-block__top-parts">
+                        <h2 class="content-block__title ">
+                            Reach by device
+                        </h2>
+                    </div>
+                    <img src="./img/schedule_device.png" alt="schedule_device_png">
+                    <div class="content-block__square content-block__square--purple "></div>
+                    <span class="content-block__legend ">Desktop</span>
+                    <div class="content-block__square "></div>
+                    <span class="content-block__legend ">Mobile views</span>
                 </article>
-                <article class="content-block">
-                    <h3 class="content-block__title">
-                        Reach by device
-                    </h3>
-                    <img src="./img/schedule_device.png">
-                    <div class="content-block__square--purple"></div>
-                    <span class="content-block__legend">Desktop</span>
-                    <div class="content-block__square"></div>
-                    <span class="content-block__legend">Mobile views</span>
+            </div>
+            <div class="page__articles-rows"> 
+                <article class="content-block content-block--gender">
+                    <div class="content-block__top-parts">                 
+                        <h2 class="content-block__title ">
+                            Gender / Age
+                        </h2>
+                        <div class="content-block__gender-legend">
+                            <div class="content-block__square content-block__square--purple "></div>
+                            <span class="content-block__legend ">women</span>
+                            <div class="content-block__square "></div>
+                            <span class="content-block__legend ">man</span>
+                        </div>
+                    </div>
+                    <img src="./img/schedule_gender.png " class="content-block__image" alt="schedule_gender_png">
                 </article>
-                <article class="content-block">
-                    <h3 class="content-block__title">
-                        Gender / Age
-                    </h3>
-                    <div class="content-block__square--purple"></div>
-                    <span class="content-block__legend">women</span>
-                    <div class="content-block__square"></div>
-                    <span class="content-block__legend">man</span>
-                    <img src="./img/schedule_gender.png" class="content-block__image">
+                <article class="content-block content-block--geo">
+                    <div class="content-block__top-parts">
+                        <h2 class="content-block__title ">
+                            Geo
+                        </h2>
+                        <div class="content-block__geo-buttons">
+                        <button class="content-block__switcher content-block__switcher--active ">Country</button>
+                        <button class="content-block__switcher ">City</button>
+                        </div>
+                    </div>
+                    <img src="./img/schedule_geo.png " alt="schedule_geo_png">
                 </article>
-                <article class="content-block">
-                    <h3 class="content-block__title">
-                        Geo
-                    </h3>
-                    <button class="content-block__switcher--active">Country</button>
-                    <button class="content-block__switcher">City</button>
-                    <img src="./img/schedule_geo.png" alt="">
-                </article>
-
+            </div>
             </div>
         </main>
 

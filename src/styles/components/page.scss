@@ -1,0 +1,22 @@
+.page {
+    margin: 10vw;
+    display: grid;
+    grid-template-columns: 98px 1fr;
+    border-radius: 14px;
+    border: 1px solid #ebebeb;
+    font-size: 16px;
+}
+
+.page__articles-rows {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.page__content {
+    background-color: #EFF3F9;
+    padding-left: 50px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+}
